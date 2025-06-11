@@ -1,7 +1,7 @@
 {
   "name": "To-Do List",
   "short_name": "ToDo",
-  "start_url": "/index.html", 
+  "start_url": "/index.html",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#4a90e2",
@@ -9,7 +9,7 @@
     {
       "src": "/Assets/bird.jpg",
       "sizes": "192x192",
-      "type": "image/jpeg" 
+      "type": "image/jpeg"
     },
     {
       "src": "/Assets/two.jpg",
