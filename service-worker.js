@@ -3,7 +3,7 @@ const CACHE_NAME = "todo-cache-v1";
 // IMPORTANT: These URLs MUST exactly match the paths served by your local server.
 // If index.html is at /Html/index.html, use that. If it's at /index.html, use that.
 const urlsToCache = [
-  "/Html/index.html",     // Adjust this path if your index.html is at root, e.g., "/index.html"
+  "/index.html",     // Adjust this path if your index.html is at root, e.g., "/index.html"
   "/Css/style.css",
   "/Javascript/app.js",
   // "/Javascript/manifest.json", // REMOVE THIS LINE IF YOU HAVE IT
