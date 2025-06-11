@@ -4,22 +4,22 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>To-Do List</title>
-  <link rel="stylesheet" href="/css/style.css" />
-  <link rel="manifest" href="/manifest.json">
+  <link rel="stylesheet" href="/Css/style.css" />
+  <link rel="manifest" href="/manifest.json" />
   <meta name="theme-color" content="#4a90e2" />
-  <link rel="icon" href="/assets/bird.jpg" />
+  <link rel="icon" href="/Assets/bird.jpg" />
 </head>
 <body>
   <div class="container">
     <h1>To-Do List</h1>
     <div class="input-group">
       <input type="text" id="taskInput" placeholder="Enter a task" />
-      <button onclick="addTask()">Add task</button>
+      <button onclick="addTask()">Add</button>
     </div>
     <ul id="taskList"></ul>
   </div>
 
-  <script src="/js/app.js"></script>
+  <script src="/Javascript/app.js"></script>
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
