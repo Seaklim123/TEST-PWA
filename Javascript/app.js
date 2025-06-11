@@ -28,17 +28,17 @@ function addTask() {
   document.getElementById("taskList").appendChild(li);
 
   taskInput.value = "";
-  if ('serviceWorker' in navigator) {
+}
+
+// ✅ Service Worker registration — should be OUTSIDE the function
+if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
-    // The path here is relative to the HTML file that loads this script (Html/index.html)
-    // From Html/index.html, you go up one level (to TESTP...), then into Javascript/, then to service-worker.js
-    navigator.serviceWorker.register('../Javascript/service-worker.js', { scope: '/' })
+    navigator.serviceWorker.register('service-worker.js')
       .then(registration => {
-        console.log('ServiceWorker registration successful with scope:', registration.scope);
+        console.log('ServiceWorker registered with scope:', registration.scope);
       })
       .catch(err => {
         console.error('ServiceWorker registration failed:', err);
       });
   });
-}
 }

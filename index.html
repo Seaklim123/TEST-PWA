@@ -4,10 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>To-Do List</title>
-  <link rel="stylesheet" href="/Css/style.css" />
-  <link rel="manifest" href="/manifest.json" />
+  <link rel="stylesheet" href="Css/style.css" />
+  <link rel="manifest" href="manifest.json" />
   <meta name="theme-color" content="#4a90e2" />
-  <link rel="icon" href="/Assets/bird.jpg" />
+  <link rel="icon" href="Assets/bird.jpg" />
 </head>
 <body>
   <div class="container">
@@ -19,11 +19,11 @@
     <ul id="taskList"></ul>
   </div>
 
-  <script src="/Javascript/app.js"></script>
+  <script src="Javascript/app.js"></script>
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
-        navigator.serviceWorker.register('/service-worker.js')
+        navigator.serviceWorker.register('service-worker.js')
           .then(registration => {
             console.log('ServiceWorker registered:', registration.scope);
           })
